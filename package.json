@@ -1,0 +1,21 @@
+{
+  "name": "node_cli",
+  "version": "1.0.0",
+  "description": "a note taking app in node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "bin": {
+   "note": "./index.js"
+  },
+  "keywords": [
+    "\"node\"",
+    "\"javascript\"",
+    "\"cli\"",
+    "\"note_taking\"",
+    "\"utility\""
+  ],
+  "author": "Debo Adebayo",
+  "license": "ISC"
+}
