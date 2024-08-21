@@ -3,11 +3,12 @@
   "version": "1.0.0",
   "description": "a note taking app in node.js",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "npm test"
   },
   "bin": {
-   "note": "./index.js"
+    "note": "./index.js"
   },
   "keywords": [
     "\"node\"",
@@ -17,5 +18,8 @@
     "\"utility\""
   ],
   "author": "Debo Adebayo",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "yargs": "^17.7.2" 
+  }
 }
