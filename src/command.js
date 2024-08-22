@@ -4,6 +4,7 @@ import { newNote, getAllNotes, findNote, removeAllNotes, removeNote } from '../u
 
 
 const listNotes = (notes) => {
+  if(notes !== undefined){
     notes.forEach(note => {
         console.log('\n')
         console.log('id:', note.id)
@@ -11,6 +12,7 @@ const listNotes = (notes) => {
         console.log('note', note.content)
         
     });
+  }
 }
 
 

@@ -16,13 +16,18 @@ export const newNote = async (note, tags) => {
 
 export const getAllNotes = async () => {
     const db = await getDB()
-    return db.notes
+
+    if(db.notes.length > 0){
+        return db.notes
+    } else {
+        console.log("No notes in your database")
+    }
 }
 
 // find the specific note according to a string
 
 export const findNote  = async (filter) => {
-    const { notes } = getAllNotes()
+    const notes  = await getAllNotes()
     return notes.filter(note => note.content.toLowerCase().includes(filter.toLowerCase()))
 
 }
@@ -31,13 +36,14 @@ export const findNote  = async (filter) => {
 
 export const removeNote = async (id) => {
     const notes = await getAllNotes()
-
     const match =  notes.find(note => note.id === id)
 
     if (match) {
         const newNotes = notes.filter(note => note.id !== id)
         await saveDB({notes: newNotes})
         return id
+    } else {
+        return null 
     }
 }
 
