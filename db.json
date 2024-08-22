@@ -1,3 +1,19 @@
 {
-  "notes": []
+  "notes": [
+    {
+      "tags": [],
+      "content": "here's a new note",
+      "id": 1724333787116
+    },
+    {
+      "tags": [],
+      "content": "Servers are awesome",
+      "id": 1724333797075
+    },
+    {
+      "tags": [],
+      "content": "I can learn to code",
+      "id": 1724333802208
+    }
+  ]
 }
